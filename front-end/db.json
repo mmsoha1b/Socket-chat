@@ -1,0 +1,105 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "text": "heheh",
+      "user": 1
+    },
+    {
+      "id": 2,
+      "text": "lol",
+      "user": 2
+    },
+    {
+      "user": 1,
+      "text": "omk",
+      "id": 3
+    },
+    {
+      "user": 1,
+      "text": "ko",
+      "id": 4
+    },
+    {
+      "user": 1,
+      "text": "kj",
+      "id": 5
+    },
+    {
+      "user": 1,
+      "text": "m",
+      "id": 6
+    },
+    {
+      "user": 1,
+      "text": "mo",
+      "id": 7
+    },
+    {
+      "user": 1,
+      "text": "gmc",
+      "id": 8
+    },
+    {
+      "user": 1,
+      "text": "kvhj",
+      "id": 9
+    },
+    {
+      "user": 1,
+      "text": "li",
+      "id": 10
+    },
+    {
+      "user": 1,
+      "text": "ok",
+      "id": 11
+    },
+    {
+      "user": 1,
+      "text": "kjabs",
+      "id": 12
+    },
+    {
+      "user": 1,
+      "text": "asm ",
+      "id": 13
+    },
+    {
+      "user": 1,
+      "text": "noir",
+      "id": 14
+    },
+    {
+      "user": 1,
+      "text": "asnd",
+      "id": 15
+    }
+  ],
+  "users": [
+    {
+      "email": "owo@uwu.com",
+      "username": "bob",
+      "password": "boiman",
+      "id": 1
+    },
+    {
+      "email": "uwu@uwu.com",
+      "username": "bob1",
+      "password": "boiman",
+      "id": 2
+    },
+    {
+      "email": "a@a.com",
+      "username": "ok",
+      "password": "okokok",
+      "id": 3
+    },
+    {
+      "email": "man@can.com",
+      "username": "canman",
+      "password": "manman",
+      "id": 4
+    }
+  ]
+}

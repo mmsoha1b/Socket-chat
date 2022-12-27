@@ -1,0 +1,86 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.chat-room{
+  height:80vh;
+  overflow-y: scroll;
+  position: relative;
+  padding-top: 20px;
+  background-color: black;
+}
+.image-box{
+  height: 50px;
+  width: 50px;
+  color: blue;
+  border-radius: 50%;
+}
+.user-name-box{
+  color: darkblue;
+}
+.message-container{
+  display: flex;
+  align-items: flex-start;
+}
+.message-box{
+  box-sizing: border-box;
+  background-color: #61dafb;
+  margin-bottom: 20px;
+  /*height:50px;*/
+  
+  /*Might change this later*/
+  height:max-content;
+  width:max-content;
+  border-radius: 10px;
+  padding:10px;
+  padding-top: 10px;
+  padding-right: 50px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  color:black;
+}
+.form-error{
+  border-style:solid;
+  border-color: red;
+  border-width: 2px;
+}
+.form-control{
+  border-width: 2px;
+}
+.error-text{
+  padding-bottom:0;
+  color:#dc3545;
+  font-family:'Arial';
+}
+
+body{
+  background-color:#1f2833;
+}
