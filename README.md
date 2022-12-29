@@ -8,6 +8,6 @@ __Note: This project requires an instance of a database comaptible with sequeliz
 - Clone the repo into your local machine.
 - Run `npm install` in both the front-end and back-end directories.
 - Create a `.env` file in the root of the back-end folder
-- Specify a `DB_NAME` , `DB_PASSWORD`,`DB_DIALECT`, `PORT` and `ACCESS_TOKEN` variable in the `.env` file.
+- Specify a `PGDATABASE`, `PGHOST`, `PGPASSWORD`, `PGPORT`, `PGUSER` and `ACCESS_TOKEN` variable in the `.env` file. Or simply replace the `DB_URL` in `db.js` to connect to your database.  
 - Start the development server of the front-end using `npm start` and for the back-end using `npm run dev`
 - Run the app
