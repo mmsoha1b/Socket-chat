@@ -23,7 +23,7 @@ const LoginForm=({users})=>{
     const togglePasswordVisibility=(event)=>{
         // Works but is thuk. Figure out and change later
         const passwordField = event.target.parentNode.parentNode.parentNode.querySelector('#formBasicPassword');
-        console.log(passwordField);
+    
         if(passwordField.type ==='password'){
             passwordField.type ='text';
         }

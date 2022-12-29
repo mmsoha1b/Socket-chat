@@ -11,9 +11,8 @@ import messageService from '../services/messageService';
 const ChatRoom = ()=>{
   const [messages,setMessages] = useState([]);
   const msgboxRef = useRef();
-  const socket = io('http://localhost:3001');
+  const socket = io('/');
   socket.on('broadcastMessage',message=>{
-    console.log('msgbroadcast');
     const newMessages = [...messages,message]
     setMessages(newMessages);
   })
@@ -27,11 +26,7 @@ const ChatRoom = ()=>{
     const newMessage = {text:messageInput.value,userId:user.id};
     const savedMessage = await messageService.postMessage(newMessage);
     messageInput.value = '';
-    console.log(savedMessage)
-    // savedMessage.user.username = user.name;
     socket.emit('postMessage',savedMessage);
-    // const newMessages = [...messages,savedMessage];
-    // setMessages(newMessages);
   }
   useEffect(()=>{
     messageService.getMessages().then((allMesaages)=>{

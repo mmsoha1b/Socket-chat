@@ -1,6 +1,5 @@
 const messageRouter = require('express').Router();
 const jwt = require('jsonwebtoken');
-const io = require('../config/utils/websocket');
 require('dotenv').config();
 const Message = require('../models/Message');
 const User = require('../models/User');

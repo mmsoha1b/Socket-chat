@@ -3,7 +3,7 @@
 A real time chat app made with React and Node/Express using websockets.
 
 ## Installation
-__Note: This project requires a database comaptible with sequelize to be installed locally. You can check the compatibility list from [here](https://sequelize.org/releases/)__
+__Note: This project requires an instance of a database comaptible with sequelize. You can check the compatibility list from [here](https://sequelize.org/releases/)__
 
 - Clone the repo into your local machine.
 - Run `npm install` in both the front-end and back-end directories.

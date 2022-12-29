@@ -10,11 +10,10 @@ const postMessage = async({userId,text})=>{
                 'authorization':`bearer ${token}`
             }
         }
-        console.log(newMessage)
+    
         const response = await axios.post(`${baseUrl}/messages`,newMessage,config);
         if (response.status === 200){
             const savedMessage = response.data;
-            console.log(savedMessage)
             return savedMessage;
         }
         else {

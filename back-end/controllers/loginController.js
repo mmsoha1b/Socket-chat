@@ -67,7 +67,6 @@ loginRouter.post('/signup',async(req,res)=>{
         return
     }
     else{
-        console.log(recievedUser);
         const saltRounds = 10;
         const passwordHash = await bcrypt.hash(recievedUser.password,saltRounds);
         const savedUser = await User.create({username:username,passwordHash:passwordHash,email:email});

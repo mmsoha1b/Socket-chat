@@ -24,7 +24,6 @@ const SignUp =({setUsers,users})=>{
     let formValidity=false;
     if(username.length>0 && email.length>0 && password.length>5 && confirmPassword===password
        && (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(email) )){
-        console.log("omks")
         formValidity=true;
     }
 
@@ -69,9 +68,8 @@ const SignUp =({setUsers,users})=>{
         }
         else{
             const savedUser = await loginService.register(newUser);
-            console.log(savedUser)
             if(!savedUser){
-                console.log("User couldn't be saved");
+
                 alertSetter("Server error occured");
             }
             else{

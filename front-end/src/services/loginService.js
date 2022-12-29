@@ -1,4 +1,3 @@
-//Move BaseUrl outside 
 import axios from 'axios'
 const baseUrl = "/api"
 const login = async ({email,password})=>{
