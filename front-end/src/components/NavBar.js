@@ -20,10 +20,10 @@ const NavBar=()=>{
               <Nav.Link>Login</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/register">
-              <Nav.Link className='ms-4'>Sign Up</Nav.Link>
+              <Nav.Link className=''>Sign Up</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/chat-room">
-              <Nav.Link className='ms-4'>Chat Room</Nav.Link>
+              <Nav.Link className=''>Chat Room</Nav.Link>
             </LinkContainer>
           </Nav>
           { localStorage.getItem('user')? <Button variant='danger' onClick={()=>navigate('logout')}>Log out</Button>:''}
