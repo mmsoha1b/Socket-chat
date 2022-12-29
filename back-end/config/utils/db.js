@@ -1,11 +1,11 @@
 const {Sequelize} = require('sequelize');
 require('dotenv').config()
-const dbName = process.env.DB_NAME;
-const dbDialect = process.env.DB_DIALECT;
-const dbPassword = process.env.DB_PASSWORD;
-const sequelize = new Sequelize(dbName, dbDialect, dbPassword, {
-    host: 'localhost',
-    dialect: 'postgres'
-  });
+const PGUSER = process.env.PGUSER;
+const PGPASSWORD = process.env.PGPASSWORD;
+const PGHOST = process.env.PGHOST;
+const PGPORT = process.env.PGPORT;
+const PGDATABASE = process.env.PGDATABASE;
+const DB_URL = `postgresql://${ PGUSER }:${ PGPASSWORD }@${ PGHOST }:${ PGPORT }/${ PGDATABASE }`
+const sequelize = new Sequelize(DB_URL);
 module.exports = sequelize;
   
