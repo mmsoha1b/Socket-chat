@@ -1,0 +1,25 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "airbnb",
+        "prettier"
+    ],
+    "overrides": [
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "prettier"
+    ],
+    "rules": {
+        "react/function-component-definition": ["enabled", {
+            "namedComponents": ["function-declaration" , "function-expression" , "arrow-function"],
+            "unnamedComponents":["function-expression" , "arrow-function"]
+    }
+]
+}}

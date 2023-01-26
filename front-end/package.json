@@ -29,9 +29,7 @@
     "eject": "react-scripts eject",
     "server": "npx json-server --watch -p 3001 db.json"
   },
-
-  "proxy":"http://localhost:3003",
-  
+  "proxy": "http://localhost:3003",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -49,5 +47,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^8.32.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "2.8.3"
   }
 }
