@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -13,20 +13,16 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const [loginFailAlert, setLoginFailAlert] = useState("");
+  const passwordFieldRef = useRef();
+
   const handleEmailChange = (event) => {
-    event.preventDefault();
     setEmail(event.target.value);
   };
   const handlePasswordChange = (event) => {
-    event.preventDefault();
     setPassword(event.target.value);
   };
   const togglePasswordVisibility = (event) => {
-    // Works but is thuk. Figure out and change later
-    const passwordField =
-      event.target.parentNode.parentNode.parentNode.querySelector(
-        "#formBasicPassword"
-      );
+    const passwordField = passwordFieldRef.current;
 
     if (passwordField.type === "password") {
       passwordField.type = "text";
@@ -34,6 +30,7 @@ const LoginForm = () => {
       passwordField.type = "password";
     }
   };
+
   const loginHandler = async (event) => {
     event.preventDefault();
     const inputNodes = event.target.querySelectorAll("input");
@@ -90,6 +87,7 @@ const LoginForm = () => {
                 type='password'
                 placeholder='Password'
                 onChange={handlePasswordChange}
+                ref={passwordFieldRef}
               />
             </Form.Group>
             <Form.Group>

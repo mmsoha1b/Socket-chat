@@ -17,7 +17,7 @@
         "prettier"
     ],
     "rules": {
-        "react/function-component-definition": ["enabled", {
+        "react/function-component-definition": ["1", {
             "namedComponents": ["function-declaration" , "function-expression" , "arrow-function"],
             "unnamedComponents":["function-expression" , "arrow-function"]
     }
